@@ -1,0 +1,41 @@
+.Input{
+    width:100%;
+    padding:10px;
+    box-sizing: border-box;
+}
+.text-error{
+    color: coral;
+}
+
+.Label {
+    text-align: start;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 7px;
+}
+
+.element{
+    outline: none;
+    border:1px solid #ccc;
+    background-color: white;
+    font:inherit;
+    padding:6px 10px;
+    width:100%;
+    display: block;
+    box-sizing: border-box;
+}
+.elementerror{
+    outline: none;
+    border:1px solid red;
+    background-color: salmon;
+    font:inherit;
+    padding:6px 10px;
+    width:100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+.element:focus {
+    outline: none;
+    background-color: #ccc;
+}

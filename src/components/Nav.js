@@ -2,8 +2,8 @@ import React, { useContext, useState } from "react";
 import { AppBar, Toolbar, Avatar, IconButton, Tooltip, Menu, MenuItem, Checkbox } from "@material-ui/core";
 import Context from "./Context";
 import { People, Style } from "@material-ui/icons";
-import { withRouter, Link } from "react-router-dom";
-
+import { withRouter, Link ,NavLink} from "react-router-dom";
+import './Nav.css'
 function Nav({ history }) {
   const ctx = useContext(Context);
   const [anchorEl, setAnchorEl] = useState(null);
@@ -24,6 +24,14 @@ function Nav({ history }) {
         <Link to="/login">
           <Style fontSize="large" style={{ color: "white" }} />
         </Link>
+        <NavLink 
+            to="/add"
+            >Add
+          </NavLink>
+          <NavLink 
+            to="/view"
+            >View
+          </NavLink>
         <div style={{ flexGrow: 1 }} />
         {ctx.auth.id ? (
           <>

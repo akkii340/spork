@@ -1,0 +1,14 @@
+
+.user-Inner{
+    border-bottom: 1px solid gray;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.user-Inner:hover{
+    border-bottom: 1px solid gray;
+    text-align: center;
+    background-color:orchid;
+}
